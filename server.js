@@ -1,7 +1,5 @@
 'use strict';
 
-// video walkthrough - https://youtu.be/ygk-kNstqK0?list=PLgJ8UgkiorCmI_wKKVt5FlkTG63sQF6rr
-
 // ===========================================================
 // Dependencies
 // ===========================================================
@@ -14,7 +12,7 @@ const path = require('path');
 // =============================================================
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT;
 
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
